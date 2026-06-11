@@ -1,0 +1,387 @@
+.poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.poppins-extralight {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.poppins-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-extrabold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.poppins-black {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.poppins-thin-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.poppins-extralight-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.poppins-light-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.poppins-regular-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.poppins-medium-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.poppins-semibold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.poppins-bold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.poppins-extrabold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.poppins-black-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+
+.carrossel{
+    width: 100%;
+    height: 800px;
+    position: relative;
+    overflow: hidden;
+    background-color: black;
+}
+
+.imgCarrossel{
+    width: 100%;
+    height: 800px;
+    object-fit: cover;
+    object-position: center;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.imgCarrossel.ativa{
+    opacity: 1;
+}
+
+
+h2{
+    font-family: 'Caveat Brush', cursive;
+    font-size: 100px;
+    color: var(--azul);
+}
+
+h5{
+    font-family: poppins;
+    font-size: 12px;
+    margin-bottom: -20px;
+    color: var(--amarelo);
+}
+.inicioProdutos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 80px 80px 0px 80px;
+    gap: 20px;
+}
+#pesquisa{
+    margin-right: 0px;
+    height: 50px;
+    width: 350px;
+    border: var(--amarelo) 1px solid;
+    text-align: center;
+    border-radius: 32px;
+    font-family: 'Caveat Brush';
+    font-size: medium;
+}
+#pesquisa:focus{
+    outline: none;
+}
+
+.card{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    width: 300px;
+    height: 450px;
+    border: var(--vermelho) 0.1px solid;
+    padding: 24px;
+    border-radius: 32px;
+    transition: all 0.2s ease-in-out;
+    justify-items: center;
+}
+.card p {
+    font-family: poppins;
+}
+.card h3{
+    font-family: caveat brush;
+    font-size: 32px;
+    padding-top: 24px;
+}
+.card img{
+    width: 250px;
+    height: 200px;
+    object-fit: cover;
+    object-position: top;
+}
+
+.comprar{
+     background-color: var(--azul);
+    height: 50px;
+    width: 300px;
+    border-radius: 24px;
+    margin-top: 24px;
+    transition: all 0.3s ease;
+    font-family: poppins;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+}
+.comprar:hover{
+    background-color: var(--amarelo);
+    color: black;
+}
+
+.card h4{
+    font-family: poppins;
+    font-size: 42px;
+}
+.card:hover{
+    transform: scale(1.01);
+}
+
+.produtos{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin: 0px 40px ;
+     
+}
+
+.empregoTitulo{
+    margin: 80px 80px 80px 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.btnEmprego {
+    display: inline-block;
+    background-color: var(--vermelho);
+    color: white;
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-family: 'Caveat Brush', cursive;
+    font-size: 24px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.btnEmprego:hover {
+    transform: scale(1.05);
+    background-color: var(--amarelo);
+    color: black;
+}
+
+/* Footer Styles */
+footer {
+    background-color: var(--vermelho);
+    color: white;
+    padding: 40px 0 10px 0;
+    margin-top: 80px;
+    font-family: poppins;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-info {
+    margin-bottom: 20px;
+    max-width: 300px;
+}
+
+.footer-info h3 {
+    font-family: 'Caveat Brush', cursive;
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: var(--amarelo);
+}
+
+.footer-info p {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.footer-social h3 {
+    font-family: 'Caveat Brush', cursive;
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: var(--amarelo);
+}
+
+.social-icons a {
+    color: white;
+    font-size: 30px;
+    margin-right: 15px;
+    transition: all 0.3s ease;
+    padding: 0;
+    display: inline-block;
+}
+
+.social-icons a::after {
+    display: none;
+}
+
+.social-icons a:hover {
+    color: var(--amarelo);
+    transform: scale(1.1);
+    font-size: 30px;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    font-size: 12px;
+}
+
+/* Inline Form Styles */
+.form-emprego-inline {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 30px;
+    max-width: 1000px;
+}
+
+.form-emprego-inline input {
+    flex: 1 1 200px;
+    padding: 15px 20px;
+    border: 2px solid var(--azul);
+    border-radius: 20px;
+    font-family: poppins;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.form-emprego-inline input:focus {
+    border-color: var(--amarelo);
+}
+
+.btnEmpregoInline {
+    background-color: var(--vermelho);
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 30px;
+    font-family: 'Caveat Brush', cursive;
+    font-size: 24px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    flex: 1 1 200px;
+}
+
+.btnEmpregoInline:hover {
+    transform: scale(1.05);
+    background-color: var(--amarelo);
+    color: black;
+}
+
+/* Localização */
+.localizacaoTitulo {
+    margin: 80px 80px 80px 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.mapaContainer {
+    margin-top: 30px;
+    width: 100%;
+    max-width: 1000px;
+    border-radius: 24px;
+    overflow: hidden;
+    border: 2px solid var(--azul);
+}

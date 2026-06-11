@@ -1,0 +1,62 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--vermelho);
+    padding: 0px 10px ;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+a{
+    text-decoration: none;
+    font-family: 'Caveat Brush', cursive;
+    color: white;
+    font-size: 24px;
+    padding: 24px;
+    position: relative;
+    transition: 0.3s ease;
+}
+
+a:hover{
+    font-size: 26px;
+}
+
+a::after{
+    content: "";
+    position: absolute;
+    left: 24px;
+    bottom: 22px;
+
+    width: calc(100% - 48px);
+    height: 3px;
+
+    background: white;
+
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform .4s ease;
+}
+
+a:hover::after{
+    transform: scaleX(1);
+}
+
+img{
+    width: 100px;
+    margin-left: 24px;
+}
+#CTAprodutos{
+    background-color: var(--azul);
+    font-family: 'Caveat Brush', cursive;
+    font-size: 20px;
+    width: 200px;
+    height: 50px;
+    color: white;
+    border-radius: 24px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+    margin: 10px 24px;
+    transition: 0.3s all ease-in-out;
+}
+#CTAprodutos:hover{
+    transform: scale(1.1);
+    
+}

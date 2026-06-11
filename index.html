@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrincaBem - Brinquedos Retro</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <div id="header-placeholder"></div>
+    
+    <main>
+
+    <div class="carrossel">
+        <img src="assets/img/carrossel1.png" alt="" class="imgCarrossel ativa">
+        <img src="assets/img/carrossel2.png" alt="" class="imgCarrossel">
+        <img src="assets/img/carrossel3.png" alt="" class="imgCarrossel">
+    </div>
+
+    
+        <div class="inicioProdutos">
+            <div class="titulo">
+                <h5>Destaques na nossa loja!</h5>
+                <h2>Produtos</h2>
+            </div>
+
+            <div class="pesquisa">
+                <input type="text" id="pesquisa" placeholder="Escreva o produto que deseja? ">
+            </div>
+        </div>
+        <p id="resultado" style="text-align: center; font-family: poppins; margin-top: 10px; color: var(--vermelho);"></p>
+
+
+        <div class="produtos">
+        <div class="card">
+            <img src="https://dcdn-us.mitiendanube.com/stores/005/356/477/products/fnfbl2ns3acesiqd0eqblg5zpqr-d80095f414093f0f5817491554424688-1024-1024.webp" alt="">
+            <h3>Boneco fofão</h3>
+            <p>Boneco do fofão pras criança que quiser vim ve</p>
+            <h4>R$ 500,00</h4>
+            <button class="comprar">Comprar</button>
+        </div>
+        <div class="card">
+            <img src="https://estrela.vtexassets.com/arquivos/ids/173298/colecao-fofolete-azul.jpg?v=638701395575470000" alt="">
+            <h3>Fofoletes</h3>
+            <p>Bonequinho feio que as criança gostava nos anos 90</p>
+            <h4>R$ 250,00</h4>
+            <button class="comprar">Comprar</button>
+        </div>
+        <div class="card">
+            <img src="https://mpbrinquedos.vteximg.com.br/arquivos/ids/249718-1000-1000/hyc49a.jpg?v=638618439773100000" alt="">
+            <h3>Boneco He-man</h3>
+            <p>Bonequinho incrível do He-Man cheio de coisa daora</p>
+            <h4>R$ 300,00</h4>
+            <button class="comprar">Comprar</button>
+        </div>
+        <div class="card">
+            <img src="https://estrela.vtexassets.com/arquivos/ids/168839-800-auto?v=639058288213630000&width=800&height=auto&aspect=true" alt="">
+            <h3>Jogo da vida</h3>
+            <p>Jogo pra se divertir com seus amigos e quem você quiser</p>
+            <h4>R$ 150,00</h4>
+            <button class="comprar">Comprar</button>
+        </div>
+        <div class="card">
+            <img src="https://m.media-amazon.com/images/I/71keKK3GV0L.jpg" alt="">
+            <h3>Mola</h3>
+            <p>O brinquedo menos legal mas o mais legal na mão de quem sabe</p>
+            <h4>R$ 50,00</h4>
+            <button class="comprar">Comprar</button>
+        </div>
+    </div>
+
+    <div class="empregoTitulo">
+        <h5>Trabalhe com a gente</h5>
+        <h2>Emprego</h2>
+        <p style="font-family: poppins; margin-bottom: 20px;">Estamos sempre em busca de talentos apaixonados por nostalgia e brinquedos retrô!</p>
+        
+        <form class="form-emprego-inline" onsubmit="event.preventDefault(); alert('Candidatura enviada com sucesso! Logo entraremos em contato.'); this.reset();">
+            <input type="text" placeholder="Nome Completo" required>
+            <input type="text" placeholder="CPF" required pattern="\d{11}" title="Digite os 11 números do CPF sem pontuação">
+            <input type="date" required title="Data de Nascimento">
+            <button type="submit" class="btnEmpregoInline">Enviar Candidatura</button>
+        </form>
+    </div>
+
+    <div class="localizacaoTitulo" id="localizacao">
+        <h5>Onde nos encontrar</h5>
+        <h2>Localização</h2>
+        <div class="mapaContainer">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3750.9160533591945!2d-43.92484432389472!3d-19.92795408146142!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa699ea3997dbdf%3A0x892a06bb3e31ff21!2sAv.%20dos%20Andradas%2C%203000%20-%20Santa%20Efig%C3%AAnia%2C%20Belo%20Horizonte%20-%20MG%2C%2030260-070!5e0!3m2!1spt-BR!2sbr!4v1718128362846!5m2!1spt-BR!2sbr" width="100%" height="450" style="border:0; border-radius: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+
+    </main>
+    
+    <div id="footer-placeholder"></div>
+    <script src="script.js"></script>
+</body>
+</html>
