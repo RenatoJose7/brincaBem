@@ -89,6 +89,6 @@ let botoesComprar = document.querySelectorAll(".comprar");
 
 botoesComprar.forEach(function(botao) {
     botao.addEventListener("click", function() {
-        alert("Produto adicionado ao carrinho com sucesso! (Funcionalidade de loja será implementada no futuro)");
+        alert("Produto adicionado ao carrinho com sucesso!");
     });
 });
